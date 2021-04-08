@@ -4,7 +4,7 @@ From: https://www.routerperformance.net/opnsense/mellanox-connecx-management-in-
 
 ### Enable module loading
 
-To enable it open the file /boot/loader.conf.local via CLI and add:
+To enable it open the file /boot/loader.conf.local via CLI and add: (If you only add to /boot/loader.conf, it'll get trounced in a reboot)
 
 ```
 mlx4en_load=“YES“
