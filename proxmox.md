@@ -7,7 +7,7 @@ Permission denied at /usr/share/perl5/PVE/Storage/Plugin.pm line 952. (500)
 ```
 Is a result of manually changing an LXC priviledge level. Don't do that, backup and restore to change privs.
 
-### SMB noserverino
+### SMB noserverino 
 
 From [here][def]
 
@@ -26,3 +26,5 @@ Then add as directory storage in Proxmox PVE
 ```
 echo 0 > /sys/devices/virtual/net/vmbr0/bridge/multicast_snooping
 ```
+
+## Time Machine
