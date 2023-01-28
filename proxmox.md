@@ -18,3 +18,9 @@ On host, in /etc/fstab add CIFS/SMB mount maunally
 Then add as directory storage in Proxmox PVE
 
 [def]: https://forum.proxmox.com/threads/backup-vm-fehler-fehlende-vzdump-quemu-ordner.115271/
+
+### Multicast snooping on Bridge Devices messes with IPV6
+
+```
+echo 0 > /sys/devices/virtual/net/vmbr0/bridge/multicast_snooping
+```
