@@ -3,6 +3,7 @@
 ## Encryption
 
 No real info on the efficacy of LTO native encryption, though it does use AES-256-GCM-128 
+That said arguments against it seem to be that its hardware native and "why would you trust it?"
 
 use STENC https://github.com/scsitape/stenc - Apt repos are out of date and have a drive crashing [error](https://serverfault.com/questions/864580/what-could-cause-a-sense-error-when-setting-lto-encryption)
 
