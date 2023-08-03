@@ -67,3 +67,8 @@ Burning FS2 FW image without signatures – 48%
 ```
  
 Reboot
+
+
+### LACP needs to be active on Mikrotik switches
+
+LAG ports need to be set to Active (LACP)
