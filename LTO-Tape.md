@@ -292,3 +292,9 @@ bzip2 -dc rec*.bz2 > recovery2_failing.tar
 ./findtarheader.pl recovery2_failing.tar | head -n 1   # first number from this into tail
 tail -c +17185 recovery2_failing.tar > recovery2_working.tar
 ```
+
+# Backup commands
+
+```
+tar --label="LABEL $(date -I)" --one-file-system -b 4096 --xattrs --totals --exclude="Downloads" --totals=USR1 -cf -  /PATH | mbuffer -m 5G -L -P 95 -f -s 2M -A "echo Insert next tape and press enter; read a < /dev/tty" --tapeaware -o /dev/nst0
+```
